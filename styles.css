@@ -1,11 +1,13 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
 :root {
   --cream: #f6f1e7;
   --ink: #1c1a17;
   --pop: #ff4f2e;
   --max: 1380px;
   --gutter: clamp(20px, 4vw, 64px);
-  --display: "Arial Black", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
-  --body: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --display: "Pretendard Variable", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --body: "Pretendard Variable", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
