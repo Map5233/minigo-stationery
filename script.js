@@ -18,9 +18,9 @@ function toggleMenu() {
 menuLinks.forEach((link) => link.addEventListener("click", () => setMenu(false)));
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && menu.classList.contains("is-open")) {
+  if (event.key === "Escape" && menu && menu.classList.contains("is-open")) {
     setMenu(false);
-    menuButton.focus();
+    if (menuButton) menuButton.focus();
   }
 });
 
@@ -30,6 +30,32 @@ window.addEventListener("resize", () => {
 
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = new Date().getFullYear();
+
+const sectionLinks = [...document.querySelectorAll("[data-section-link]")];
+const navSections = [...document.querySelectorAll("[data-nav-section]")];
+
+const updateCurrentSection = () => {
+  if (!sectionLinks.length || !navSections.length) return;
+
+  const marker = window.scrollY + Math.min(window.innerHeight * 0.35, 320);
+  let activeId = "";
+
+  navSections.forEach((section) => {
+    if (section.offsetTop <= marker) activeId = section.id;
+  });
+
+  sectionLinks.forEach((link) => {
+    const isCurrent = activeId && link.hash === `#${activeId}`;
+    if (isCurrent) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+};
+
+if (sectionLinks.length && navSections.length) {
+  window.addEventListener("scroll", updateCurrentSection, { passive: true });
+  window.addEventListener("resize", updateCurrentSection, { passive: true });
+  updateCurrentSection();
+}
 
 const scrubScene = document.querySelector("[data-hero-scrub-scene]");
 const scrubVideo = document.querySelector("[data-hero-scrub]");

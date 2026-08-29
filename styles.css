@@ -45,7 +45,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid var(--pop); outline-o
 .site-nav { display: flex; align-items: center; gap: clamp(24px, 3vw, 48px); font-size: .86rem; font-weight: 800; }
 .site-nav a, .footer-nav a { padding: 12px 0; text-underline-offset: 6px; }
 .site-nav a:hover, .footer-nav a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--pop); }
-.site-nav a[aria-current="page"], .footer-nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: var(--pop); }
+.site-nav a[aria-current="page"], .site-nav a[aria-current="location"], .footer-nav a[aria-current="page"], .footer-nav a[aria-current="location"] { text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: var(--pop); }
 .menu-toggle { display: none; width: 48px; height: 48px; padding: 0; color: var(--cream); background: transparent; border: 0; cursor: pointer; }
 .menu-toggle span { display: block; width: 25px; height: 3px; margin: 6px auto; background: currentColor; }
 
@@ -68,7 +68,8 @@ a:focus-visible, button:focus-visible { outline: 4px solid var(--pop); outline-o
 .keyword-marquee-group { flex: none; display: flex; align-items: center; gap: clamp(24px, 3vw, 52px); padding: 20px clamp(24px, 3vw, 52px); }
 .keyword-marquee-group span { white-space: nowrap; font-family: var(--display); font-size: clamp(1.25rem, 2.2vw, 2.4rem); font-weight: 900; letter-spacing: -.045em; line-height: 1; }
 
-.section-space { padding: max(15vh, 132px) var(--gutter); scroll-margin-top: 70px; }
+.section-space { padding: max(15vh, 132px) var(--gutter); }
+#about, #products, #stories, #contact { scroll-margin-top: 74px; }
 .section-topline { width: min(100%, var(--max)); margin: 0 auto 64px; padding-top: 14px; display: flex; justify-content: space-between; gap: 24px; border-top: 2px solid var(--ink); font: 900 .67rem/1 var(--body); letter-spacing: .14em; }
 .section-topline-light { border-color: var(--cream); }
 .display-title { font-size: clamp(3.7rem, 7.8vw, 8.1rem); }
