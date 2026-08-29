@@ -126,6 +126,10 @@ a:focus-visible, button:focus-visible { outline: 4px solid var(--pop); outline-o
 .story-item h3 { margin: 0; font-family: var(--display); font-size: clamp(1.45rem, 2.4vw, 2.6rem); font-weight: 900; line-height: 1.2; letter-spacing: -.055em; }
 .story-item p { margin: 0; font-size: .87rem; }
 .story-item a > span { font-size: 1.3rem; }
+.home-story-message { max-width: none; margin: 0; padding: 48px 0; font-weight: 700; }
+.story-more-row { width: min(100%, var(--max)); margin: 54px auto 0; display: flex; justify-content: flex-end; }
+.story-more-button { min-height: 54px; padding: 14px 18px; display: inline-flex; align-items: center; justify-content: space-between; gap: 58px; color: var(--cream); background: var(--ink); font-size: .86rem; font-weight: 900; }
+.story-more-button:hover { color: var(--ink); background: var(--pop); }
 
 .contact { color: var(--cream); background: var(--pop); }
 .contact-grid { width: min(100%, var(--max)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); align-items: end; gap: clamp(48px, 8vw, 120px); }
@@ -256,6 +260,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid var(--pop); outline-o
   .story-item h3 { grid-column: 1; font-size: 1.7rem; }
   .story-item p { grid-column: 1; margin: 0; }
   .story-item a > span { grid-column: 2; grid-row: 1 / span 3; align-self: center; }
+  .story-more-button { width: 100%; }
 
   .contact-copy { padding-bottom: 0; }
   .contact-copy p { margin-top: 32px; }

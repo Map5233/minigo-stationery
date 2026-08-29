@@ -31,7 +31,7 @@
         <nav class="site-nav" id="site-menu" aria-label="주요 메뉴" data-menu>
           <a href="about.html">내 소개</a>
           <a href="#products">제품</a>
-          <a href="#stories">이야기</a>
+          <a href="story/">이야기</a>
           <a href="#contact">연락하기</a>
         </nav>
       </div>
@@ -151,31 +151,11 @@
           <p class="section-copy">물건을 고르고, 쓰고, 오래 곁에 두는 방법을 나눕니다.</p>
         </div>
 
-        <div class="story-list">
-          <article class="story-item">
-            <a href="#contact">
-              <time datetime="2026-08-18">2026. 08. 18</time>
-              <h3>연필을 처음 잡는 아이에게 필요한 건 힘보다 편안함입니다</h3>
-              <p>손에 힘을 주기 전에 잡을 자리를 익히는 연습에 관하여.</p>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-          <article class="story-item">
-            <a href="#contact">
-              <time datetime="2026-07-29">2026. 07. 29</time>
-              <h3>우리 아이 연필교정기를 고를 때 살펴볼 세 가지</h3>
-              <p>손가락 가이드, 그립형, 손목 보조형의 차이를 알아봅니다.</p>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-          <article class="story-item">
-            <a href="#contact">
-              <time datetime="2026-07-04">2026. 07. 04</time>
-              <h3>미니고라는 이름으로 첫 인사를 건넵니다</h3>
-              <p>작은 손이 스스로 익숙해질 때까지 곁을 돕고 싶은 마음에서 시작했습니다.</p>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
+        <div class="story-list" data-story-list aria-live="polite">
+          <p class="home-story-message">최신 이야기를 불러오는 중입니다.</p>
+        </div>
+        <div class="story-more-row">
+          <a class="story-more-button" href="story/">이야기 더 보기 <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -202,7 +182,7 @@
       <nav class="footer-nav" aria-label="하단 메뉴">
         <a href="about.html">내 소개</a>
         <a href="#products">제품</a>
-        <a href="#stories">이야기</a>
+        <a href="story/">이야기</a>
         <a href="mailto:hello@minigo.kr">이메일</a>
       </nav>
       <p class="copyright">© <span data-year>2026</span> MINIGO. ALL RIGHTS RESERVED.</p>
