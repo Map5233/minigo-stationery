@@ -13,7 +13,8 @@
 
 ## 파일 구성
 
-- `index.html` — 홈, 소개, 제품, 이야기, 연락하기
+- `index.html` — 홈, 제품, 이야기, 연락하기
+- `about.html` — 창업자 소개와 브랜드 스토리
 - `styles.css` — 브랜드 토큰, 편집 레이아웃, 반응형 스타일
 - `script.js` — 접근 가능한 모바일 메뉴와 연도 표시
 - `assets/minigo-pop-hero.png` — 와이드 대표 제품 사진
