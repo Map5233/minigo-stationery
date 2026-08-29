@@ -40,9 +40,10 @@
 
 ## Interaction
 
-- 유일한 장면 모션은 히어로 사진의 18초짜리 `scale(1 → 1.055)` 줌이다.
+- 모션은 히어로 사진의 18초짜리 `scale(1 → 1.055)` 줌과 홈의 28초 키워드 마퀴, 두 종류만 사용한다.
+- 키워드 마퀴는 히어로 직후 한 번만 배치하고 속도 변화나 일시 정지 효과를 추가하지 않는다.
 - 나머지 화면에는 등장 애니메이션, 패럴랙스, 자동 이동, 전환 모션을 넣지 않는다.
-- `prefers-reduced-motion: reduce`에서는 줌을 포함한 모든 animation/transition을 끈다.
+- `prefers-reduced-motion: reduce`에서는 줌과 마퀴를 포함한 모든 animation/transition을 끈다.
 - 모바일 메뉴는 `aria-expanded`, Escape 닫기, 포커스 복귀를 제공한다.
 - 링크와 버튼은 포인터와 키보드 모두에서 식별 가능한 hover/focus 상태를 갖는다.
 - 스크롤바는 숨기지 않고 세 토큰 안에서 일관되게 표시한다.
