@@ -1,0 +1,50 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "comfortable-first-grip-20260829"
+        }
+      ],
+      "destination": "/story/first-pencil-grip.html",
+      "permanent": true,
+      "preserveQueryParams": false
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "first-story-20260829"
+        }
+      ],
+      "destination": "/story/why-minigo-started.html",
+      "permanent": true,
+      "preserveQueryParams": false
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "behind-package-20260829"
+        }
+      ],
+      "destination": "/story/why-pencil-grip-package-changed.html",
+      "permanent": true,
+      "preserveQueryParams": false
+    },
+    {
+      "source": "/story/post.html",
+      "destination": "/story/",
+      "permanent": false,
+      "preserveQueryParams": false
+    }
+  ]
+}
