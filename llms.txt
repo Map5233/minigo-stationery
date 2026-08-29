@@ -1,0 +1,22 @@
+# 미니고
+
+미니고는 아이의 첫 필기 습관을 편안하게 돕는 연필교정기 브랜드입니다.
+
+## 파는 것
+
+- 7컬러 연필교정기
+- 쫀득쫀득 8개입 연필교정기
+- 손가락 위치와 손목 자세를 함께 살피는 연필교정기
+
+## 페이지 안내
+
+- [홈](https://minigo-stationery.vercel.app/): 브랜드 소개, 대표 제품, 최신 이야기
+- [내 소개](https://minigo-stationery.vercel.app/about.html): 미니고의 시작과 제품 기준
+- [제품](https://minigo-stationery.vercel.app/#products): 세 가지 연필교정기 비교와 구매 링크
+- [이야기](https://minigo-stationery.vercel.app/story/): 미니고의 제품과 사용 기록
+
+## 이야기(블로그)
+
+- [연필을 처음 잡는 아이에게 무엇이 필요할까요?](https://minigo-stationery.vercel.app/story/first-pencil-grip.html): 편안하게 시도하고 아이의 반응을 살피는 연필 잡기 시작 방법
+- [미니고는 왜 연필교정기를 시작했나요?](https://minigo-stationery.vercel.app/story/why-minigo-started.html): 작은 손을 관찰하며 세운 미니고의 시작과 제품 기준
+- [연필교정기 패키지는 왜 바꾸게 되었나요?](https://minigo-stationery.vercel.app/story/why-pencil-grip-package-changed.html): 기존 패키지 개선 기록과 사실 확인이 필요한 부분을 구분한 초안

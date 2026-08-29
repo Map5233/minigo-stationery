@@ -110,6 +110,11 @@
 .post-body ul { margin: 0 0 1.7em; padding-left: 1.25em; }
 .post-body li { margin-bottom: .5em; }
 .post-body li::marker { color: var(--pop); }
+.post-note { margin: 0 0 52px; padding: 22px; color: var(--cream); background: var(--ink); border-left: 8px solid var(--pop); }
+.post-note strong { display: block; margin-bottom: 8px; font-family: var(--display); font-size: 1.05rem; }
+.post-note p { max-width: none; margin: 0; }
+.post-cta { min-height: 54px; margin-top: 38px; padding: 14px 18px; display: inline-flex; align-items: center; justify-content: space-between; gap: 38px; color: var(--ink); background: var(--pop); font-size: .88rem; font-weight: 900; }
+.post-cta:hover { color: var(--pop); background: var(--ink); }
 .post-faq { margin-top: max(12vh, 84px); }
 .post-faq details { padding: 18px 0; border-top: 1px solid rgba(28, 26, 23, .35); }
 .post-faq details:last-child { border-bottom: 1px solid rgba(28, 26, 23, .35); }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>미니고 이야기</title>
+    <link>https://minigo-stationery.vercel.app/story/</link>
+    <description>작은 손의 편안한 시작을 돕는 미니고의 제품과 사용 이야기</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://minigo-stationery.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>연필을 처음 잡는 아이에게 무엇이 필요할까요?</title>
+      <link>https://minigo-stationery.vercel.app/story/first-pencil-grip.html</link>
+      <description>한 가지 정답 자세보다 아이가 편안하게 시도할 환경을 먼저 살피는 연필 잡기 시작 방법을 안내합니다.</description>
+      <pubDate>Sat, 29 Aug 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/story/first-pencil-grip.html</guid>
+    </item>
+    <item>
+      <title>미니고는 왜 연필교정기를 시작했나요?</title>
+      <link>https://minigo-stationery.vercel.app/story/why-minigo-started.html</link>
+      <description>아이의 작은 손이 연필을 편안하게 익히도록 돕고 싶었던 미니고의 시작과 제품 기준을 기록합니다.</description>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/story/why-minigo-started.html</guid>
+    </item>
+    <item>
+      <title>연필교정기 패키지는 왜 바꾸게 되었나요?</title>
+      <link>https://minigo-stationery.vercel.app/story/why-pencil-grip-package-changed.html</link>
+      <description>고객의 포장 불편 의견에서 시작됐다고 기록된 패키지 개선 초안과 확인이 필요한 내용을 함께 정리합니다.</description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/story/why-pencil-grip-package-changed.html</guid>
+    </item>
+  </channel>
+</rss>
