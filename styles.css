@@ -49,8 +49,9 @@ a:focus-visible, button:focus-visible { outline: 4px solid var(--pop); outline-o
 .menu-toggle { display: none; width: 48px; height: 48px; padding: 0; color: var(--cream); background: transparent; border: 0; cursor: pointer; }
 .menu-toggle span { display: block; width: 25px; height: 3px; margin: 6px auto; background: currentColor; }
 
-.hero { position: relative; min-height: 100svh; display: flex; align-items: end; color: var(--cream); background: var(--ink); overflow: hidden; }
-.hero-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; animation: heroZoom 18s ease-out both; }
+.hero-scroll { position: relative; min-height: 280svh; background: var(--ink); }
+.hero { position: sticky; top: 0; min-height: 100svh; height: 100svh; display: flex; align-items: end; color: var(--cream); background: var(--ink); overflow: hidden; }
+.hero-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(28, 26, 23, .84) 0%, rgba(28, 26, 23, .45) 46%, rgba(28, 26, 23, .08) 80%), linear-gradient(0deg, rgba(28, 26, 23, .7) 0%, rgba(28, 26, 23, 0) 52%); }
 .hero-content { position: relative; z-index: 1; width: min(100%, var(--max)); margin: 0 auto; padding: 160px var(--gutter) clamp(132px, 17vh, 190px); }
 .hero-kicker, .product-label { margin: 0 0 24px; font: 900 .72rem/1 var(--body); letter-spacing: .16em; }
@@ -312,6 +313,8 @@ a:focus-visible, button:focus-visible { outline: 4px solid var(--pop); outline-o
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .hero-scroll { min-height: 100svh; }
+  .hero { position: relative; }
   .hero-media { transform: none !important; }
   .keyword-marquee-track { transform: none !important; }
 }

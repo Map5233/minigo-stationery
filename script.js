@@ -31,6 +31,80 @@ window.addEventListener("resize", () => {
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = new Date().getFullYear();
 
+const scrubScene = document.querySelector("[data-hero-scrub-scene]");
+const scrubVideo = document.querySelector("[data-hero-scrub]");
+
+if (scrubScene && scrubVideo) {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const mobileViewport = window.matchMedia("(max-width: 700px)");
+  let scrubDuration = 6;
+  let scrubTimer = 0;
+
+  const updateScrubFrame = () => {
+    scrubTimer = 0;
+    if (reducedMotion.matches || !scrubVideo.duration) return;
+
+    const sceneRect = scrubScene.getBoundingClientRect();
+    const scrollRange = Math.max(scrubScene.offsetHeight - window.innerHeight, 1);
+    const progress = Math.min(Math.max(-sceneRect.top / scrollRange, 0), 1);
+    const nextTime = progress * Math.max(scrubDuration - 1 / 24, 0);
+
+    if (Math.abs(scrubVideo.currentTime - nextTime) > 1 / 48) {
+      scrubVideo.currentTime = nextTime;
+    }
+  };
+
+  const requestScrubFrame = () => {
+    if (scrubTimer || reducedMotion.matches) return;
+    scrubTimer = window.setTimeout(updateScrubFrame, 16);
+  };
+
+  const setHeroMedia = () => {
+    const mobile = mobileViewport.matches;
+    const poster = mobile
+      ? scrubVideo.dataset.mobilePoster
+      : scrubVideo.dataset.desktopPoster;
+    const source = mobile
+      ? scrubVideo.dataset.mobileSrc
+      : scrubVideo.dataset.desktopSrc;
+
+    scrubVideo.poster = poster;
+
+    if (reducedMotion.matches) {
+      scrubVideo.pause();
+      scrubVideo.removeAttribute("src");
+      scrubVideo.load();
+      return;
+    }
+
+    if (scrubVideo.dataset.activeSrc === source) {
+      requestScrubFrame();
+      return;
+    }
+
+    scrubVideo.dataset.activeSrc = source;
+    scrubVideo.addEventListener(
+      "loadedmetadata",
+      () => {
+        scrubDuration = Number.isFinite(scrubVideo.duration)
+          ? scrubVideo.duration
+          : 6;
+        scrubVideo.pause();
+        requestScrubFrame();
+      },
+      { once: true },
+    );
+    scrubVideo.src = source;
+    scrubVideo.load();
+  };
+
+  window.addEventListener("scroll", requestScrubFrame, { passive: true });
+  window.addEventListener("resize", requestScrubFrame, { passive: true });
+  mobileViewport.addEventListener("change", setHeroMedia);
+  reducedMotion.addEventListener("change", setHeroMedia);
+  setHeroMedia();
+}
+
 const storyList = document.querySelector("[data-story-list]");
 
 const formatStoryDate = (value) => {
