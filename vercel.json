@@ -11,8 +11,7 @@
         }
       ],
       "destination": "/story/first-pencil-grip.html",
-      "permanent": true,
-      "preserveQueryParams": false
+      "permanent": true
     },
     {
       "source": "/story/post.html",
@@ -24,8 +23,7 @@
         }
       ],
       "destination": "/story/why-minigo-started.html",
-      "permanent": true,
-      "preserveQueryParams": false
+      "permanent": true
     },
     {
       "source": "/story/post.html",
@@ -37,14 +35,12 @@
         }
       ],
       "destination": "/story/why-pencil-grip-package-changed.html",
-      "permanent": true,
-      "preserveQueryParams": false
+      "permanent": true
     },
     {
       "source": "/story/post.html",
       "destination": "/story/",
-      "permanent": false,
-      "preserveQueryParams": false
+      "permanent": false
     }
   ]
 }
