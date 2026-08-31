@@ -57,7 +57,18 @@
           <h2 id="latest-title">최근 이야기</h2>
         </div>
         <ol class="blog-list" id="list" aria-live="polite">
-          <li class="blog-state">이야기를 불러오는 중입니다.</li>
+          <li class="blog-card">
+            <a href="pencil-grip-age.html">
+              <span class="blog-card-number" aria-hidden="true">01</span>
+              <div class="blog-card-content">
+                <time datetime="2026-08-30">2026. 08. 30.</time>
+                <h3>연필교정기는 몇 살부터 사용하면 좋을까요?</h3>
+                <p class="blog-card-summary">특정 나이보다 아이가 연필을 잡을 때의 편안함과 사용 모습을 살펴 연필교정기를 시도하는 방법을 안내합니다.</p>
+                <div class="blog-tags"><span class="blog-tag">연필교정기</span><span class="blog-tag">사용 시기</span></div>
+              </div>
+              <span class="blog-card-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
         </ol>
       </section>
     </main>
@@ -133,8 +144,9 @@
           .then(function (response) { if (!response.ok) throw new Error(String(response.status)); return response.json(); })
           .then(render)
           .catch(function () {
-            list.textContent = "";
-            list.appendChild(element("li", "blog-state", "이야기를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."));
+            if (!list.children.length) {
+              list.appendChild(element("li", "blog-state", "이야기를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."));
+            }
           });
       })();
     </script>
