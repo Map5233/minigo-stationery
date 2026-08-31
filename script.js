@@ -199,10 +199,11 @@ if (storyList) {
     })
     .then(renderHomeStories)
     .catch(() => {
-      storyList.textContent = "";
-      const error = document.createElement("p");
-      error.className = "home-story-message";
-      error.textContent = "이야기를 불러오지 못했습니다. 잠시 후 다시 확인해 주세요.";
-      storyList.appendChild(error);
+      if (!storyList.children.length) {
+        const error = document.createElement("p");
+        error.className = "home-story-message";
+        error.textContent = "이야기를 불러오지 못했습니다. 잠시 후 다시 확인해 주세요.";
+        storyList.appendChild(error);
+      }
     });
 }
