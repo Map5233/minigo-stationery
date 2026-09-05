@@ -7,6 +7,30 @@
         {
           "type": "query",
           "key": "id",
+          "value": "pencil-grip-comparison-20260905"
+        }
+      ],
+      "destination": "/story/pencil-grip-comparison.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-comparison"
+        }
+      ],
+      "destination": "/story/pencil-grip-comparison.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
           "value": "pencil-grip-age-20260830"
         }
       ],
