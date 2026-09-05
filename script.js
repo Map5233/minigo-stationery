@@ -99,6 +99,7 @@ if (scrubScene && scrubVideo) {
     if (reducedMotion.matches) {
       scrubVideo.pause();
       scrubVideo.removeAttribute("src");
+      delete scrubVideo.dataset.activeSrc;
       scrubVideo.load();
       return;
     }

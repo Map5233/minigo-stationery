@@ -7,7 +7,43 @@
         {
           "type": "query",
           "key": "id",
+          "value": "pencil-grip-age-20260830"
+        }
+      ],
+      "destination": "/story/pencil-grip-age.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-age"
+        }
+      ],
+      "destination": "/story/pencil-grip-age.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
           "value": "comfortable-first-grip-20260829"
+        }
+      ],
+      "destination": "/story/first-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "first-pencil-grip"
         }
       ],
       "destination": "/story/first-pencil-grip.html",
@@ -30,8 +66,32 @@
       "has": [
         {
           "type": "query",
+          "key": "slug",
+          "value": "why-minigo-started"
+        }
+      ],
+      "destination": "/story/why-minigo-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
           "key": "id",
           "value": "behind-package-20260829"
+        }
+      ],
+      "destination": "/story/why-pencil-grip-package-changed.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "why-pencil-grip-package-changed"
         }
       ],
       "destination": "/story/why-pencil-grip-package-changed.html",
