@@ -5,8 +5,15 @@
     <link>https://minigo-stationery.vercel.app/story/</link>
     <description>작은 손의 편안한 시작을 돕는 미니고의 제품과 사용 이야기</description>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://minigo-stationery.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>아이가 연필을 주먹으로 쥐면 어떻게 도와줘야 할까요?</title>
+      <link>https://minigo-stationery.vercel.app/story/fist-pencil-grasp.html</link>
+      <description>주먹 쥐기만으로 문제를 단정하지 않고, 그리기 모습과 편안함을 관찰하며 필기구와 놀이를 선택하는 방법을 안내합니다.</description>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/story/fist-pencil-grasp.html</guid>
+    </item>
     <item>
       <title>미니고 연필교정기 3종은 어떤 점이 다른가요?</title>
       <link>https://minigo-stationery.vercel.app/story/pencil-grip-comparison.html</link>

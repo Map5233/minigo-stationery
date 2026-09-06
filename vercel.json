@@ -7,6 +7,30 @@
         {
           "type": "query",
           "key": "id",
+          "value": "fist-pencil-grasp-20260906"
+        }
+      ],
+      "destination": "/story/fist-pencil-grasp.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "fist-pencil-grasp"
+        }
+      ],
+      "destination": "/story/fist-pencil-grasp.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
           "value": "pencil-grip-comparison-20260905"
         }
       ],
