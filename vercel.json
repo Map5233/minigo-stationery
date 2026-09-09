@@ -7,6 +7,30 @@
         {
           "type": "query",
           "key": "id",
+          "value": "pencil-grip-necessity-20260909"
+        }
+      ],
+      "destination": "/story/pencil-grip-necessity.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-necessity"
+        }
+      ],
+      "destination": "/story/pencil-grip-necessity.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
           "value": "pencil-grip-comparison-20260905"
         }
       ],

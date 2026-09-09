@@ -5,8 +5,15 @@
     <link>https://minigo-stationery.vercel.app/story/</link>
     <description>작은 손의 편안한 시작을 돕는 미니고의 제품과 사용 이야기</description>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://minigo-stationery.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>연필교정기는 모든 아이에게 꼭 필요한가요?</title>
+      <link>https://minigo-stationery.vercel.app/story/pencil-grip-necessity.html</link>
+      <description>연필교정기를 필수 준비물로 정하기 전에 손의 편안함, 실제 필기 어려움, 다른 필기구와의 차이를 살펴보는 기준을 정리했습니다.</description>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/story/pencil-grip-necessity.html</guid>
+    </item>
     <item>
       <title>미니고 연필교정기 3종은 어떤 점이 다른가요?</title>
       <link>https://minigo-stationery.vercel.app/story/pencil-grip-comparison.html</link>
