@@ -7,6 +7,30 @@
         {
           "type": "query",
           "key": "id",
+          "value": "first-pencil-choice-20260910"
+        }
+      ],
+      "destination": "/story/first-pencil-choice.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "first-pencil-choice"
+        }
+      ],
+      "destination": "/story/first-pencil-choice.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
           "value": "pencil-grip-comparison-20260905"
         }
       ],

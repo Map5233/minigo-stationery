@@ -17,6 +17,8 @@
 
 ## 이야기(블로그)
 
+- [처음 연필을 잡는 아이에게 어떤 연필을 골라 주면 좋을까요?](https://minigo-stationery.vercel.app/story/first-pencil-choice.html): 첫 연필은 굵기와 길이, 손의 편안함을 비교해 고르세요. 연필교정기를 함께 쓸 때 필요한 규격 확인도 정리했습니다.
+
 - [미니고 연필교정기 3종은 어떤 점이 다른가요?](https://minigo-stationery.vercel.app/story/pencil-grip-comparison.html): 7컬러형, 쫀득쫀득 8개입형, 손목 보조대가 표시된 제품의 차이를 색상·수량·구성품 기준으로 정리했습니다.
 
 - [연필교정기는 몇 살부터 사용하면 좋을까요?](https://minigo-stationery.vercel.app/story/pencil-grip-age.html): 나이보다 아이의 편안함과 사용 모습을 살펴 시작하는 방법
