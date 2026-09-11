@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
+  "mainSha": "b9a523cd1391e294a15c33e87db65db862cdbec6",
   "posts": [
+    {
+      "title": "왼손잡이 아이도 미니고 연필교정기를 사용할 수 있나요?",
+      "url": "left-handed-pencil-grip.html",
+      "date": "2026-09-11",
+      "pr": 7,
+      "sha": "29a1f5860c5674945f8b605eb3e27604b6245279"
+    },
     {
       "title": "처음 연필을 잡는 아이에게 어떤 연필을 골라 주면 좋을까요?",
       "url": "first-pencil-choice.html",

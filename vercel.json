@@ -3,6 +3,53 @@
   "headers": [{"source":"/(.*)","headers":[{"key":"X-Robots-Tag","value":"noindex, nofollow"}]}],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mgo.onthemol.com"
+        }
+      ],
+      "destination": "https://minigo.onthemol.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "minigo-stationery.vercel.app"
+        }
+      ],
+      "destination": "https://minigo.onthemol.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "/stationery/",
+      "permanent": false
+    },
+    {
+      "source": "/stationery",
+      "destination": "/stationery/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/stationery/",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/index.html",
+      "destination": "/stationery/",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story",
+      "destination": "/stationery/story/",
+      "permanent": true
+    },
+    {
       "source": "/story/post.html",
       "has": [
         {
@@ -11,7 +58,19 @@
           "value": "pencil-grip-comparison-20260905"
         }
       ],
-      "destination": "/story/pencil-grip-comparison.html",
+      "destination": "/stationery/story/pencil-grip-comparison.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "pencil-grip-comparison-20260905"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-comparison.html",
       "permanent": true
     },
     {
@@ -23,7 +82,19 @@
           "value": "pencil-grip-comparison"
         }
       ],
-      "destination": "/story/pencil-grip-comparison.html",
+      "destination": "/stationery/story/pencil-grip-comparison.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-comparison"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-comparison.html",
       "permanent": true
     },
     {
@@ -35,7 +106,19 @@
           "value": "pencil-grip-age-20260830"
         }
       ],
-      "destination": "/story/pencil-grip-age.html",
+      "destination": "/stationery/story/pencil-grip-age.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "pencil-grip-age-20260830"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-age.html",
       "permanent": true
     },
     {
@@ -47,7 +130,19 @@
           "value": "pencil-grip-age"
         }
       ],
-      "destination": "/story/pencil-grip-age.html",
+      "destination": "/stationery/story/pencil-grip-age.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-age"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-age.html",
       "permanent": true
     },
     {
@@ -59,7 +154,19 @@
           "value": "comfortable-first-grip-20260829"
         }
       ],
-      "destination": "/story/first-pencil-grip.html",
+      "destination": "/stationery/story/first-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "comfortable-first-grip-20260829"
+        }
+      ],
+      "destination": "/stationery/story/first-pencil-grip.html",
       "permanent": true
     },
     {
@@ -71,7 +178,19 @@
           "value": "first-pencil-grip"
         }
       ],
-      "destination": "/story/first-pencil-grip.html",
+      "destination": "/stationery/story/first-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "first-pencil-grip"
+        }
+      ],
+      "destination": "/stationery/story/first-pencil-grip.html",
       "permanent": true
     },
     {
@@ -83,7 +202,19 @@
           "value": "first-story-20260829"
         }
       ],
-      "destination": "/story/why-minigo-started.html",
+      "destination": "/stationery/story/why-minigo-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "first-story-20260829"
+        }
+      ],
+      "destination": "/stationery/story/why-minigo-started.html",
       "permanent": true
     },
     {
@@ -95,7 +226,19 @@
           "value": "why-minigo-started"
         }
       ],
-      "destination": "/story/why-minigo-started.html",
+      "destination": "/stationery/story/why-minigo-started.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "why-minigo-started"
+        }
+      ],
+      "destination": "/stationery/story/why-minigo-started.html",
       "permanent": true
     },
     {
@@ -107,7 +250,19 @@
           "value": "behind-package-20260829"
         }
       ],
-      "destination": "/story/why-pencil-grip-package-changed.html",
+      "destination": "/stationery/story/why-pencil-grip-package-changed.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "behind-package-20260829"
+        }
+      ],
+      "destination": "/stationery/story/why-pencil-grip-package-changed.html",
       "permanent": true
     },
     {
@@ -119,13 +274,54 @@
           "value": "why-pencil-grip-package-changed"
         }
       ],
-      "destination": "/story/why-pencil-grip-package-changed.html",
+      "destination": "/stationery/story/why-pencil-grip-package-changed.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "why-pencil-grip-package-changed"
+        }
+      ],
+      "destination": "/stationery/story/why-pencil-grip-package-changed.html",
       "permanent": true
     },
     {
       "source": "/story/post.html",
-      "destination": "/story/",
+      "destination": "/stationery/story/",
       "permanent": false
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "destination": "/stationery/story/",
+      "permanent": false
+    },
+    {
+      "source": "/about.html",
+      "destination": "/stationery/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/:path*",
+      "destination": "/stationery/story/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/stationery/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/stationery/story/",
+      "destination": "/story/index.html"
+    },
+    {
+      "source": "/stationery/:path*",
+      "destination": "/:path*"
     }
   ]
 }
