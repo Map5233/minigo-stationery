@@ -290,6 +290,54 @@
     },
     {
       "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "left-handed-pencil-grip-20260911"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "left-handed-pencil-grip"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "left-handed-pencil-grip-20260911"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "left-handed-pencil-grip"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
       "destination": "/stationery/story/",
       "permanent": false
     },
