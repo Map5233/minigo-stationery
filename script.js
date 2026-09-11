@@ -15,6 +15,30 @@ function toggleMenu() {
   setMenu(menuButton.getAttribute("aria-expanded") !== "true");
 }
 
+// Review-branch only: shared request controls survive regenerated article copies.
+// Public main does not include this loader and it does not publish or merge.
+if (document.querySelector(".post-article")) {
+  const requestStyle = document.createElement("link");
+  requestStyle.rel = "stylesheet"; requestStyle.href = "/review/requests.css";
+  document.head.append(requestStyle);
+  const policyScript = document.createElement("script");
+  policyScript.src = "/review/request-policy.js";
+  const requestLoadError = () => {
+    const message = document.createElement("p");
+    message.className = "publish-request";
+    message.setAttribute("role", "status");
+    message.textContent = "발행 요청 기능을 불러오지 못했습니다. 검토함에서 다시 시도해 주세요.";
+    document.querySelector(".post-article").append(message);
+  };
+  policyScript.onerror = requestLoadError;
+  policyScript.onload = () => {
+    const requestScript = document.createElement("script");
+    requestScript.onerror = requestLoadError;
+    requestScript.src = "/review/requests.js"; document.body.append(requestScript);
+  };
+  document.body.append(policyScript);
+}
+
 menuLinks.forEach((link) => link.addEventListener("click", () => setMenu(false)));
 
 document.addEventListener("keydown", (event) => {

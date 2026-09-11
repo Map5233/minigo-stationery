@@ -1,0 +1,20 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": [
+    "review"
+  ],
+  "locale": "ko-KR",
+  "canonicalMap": "review/PUBLISH-REQUESTS.md",
+  "requiredCapabilities": [],
+  "requiredCommands": [
+    "unit",
+    "browser"
+  ],
+  "commands": {
+    "unit": "node scripts/test-publish-requests.cjs",
+    "browser": "node scripts/test-publish-browser.cjs"
+  },
+  "evidence": {
+    "failurePaths": "scripts/test-publish-browser.cjs"
+  }
+}

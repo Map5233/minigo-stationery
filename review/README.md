@@ -9,3 +9,5 @@
 
 375px에서 목록과 각 글의 가로 넘침/이미지/왕복 링크를 확인합니다. 배포 READY와 branch alias를 API에서 확인한 후 같은 주소를 안내합니다. 이 목록은 마지막 자동화 성공 시점의 상태이며 실시간 PR 상태 표시가 아닙니다.
 
+
+발행 요청 UI 유지: review/PUBLISH-REQUESTS.md를 참고하세요. script.js의 검토 전용 로더와 review/index.html의 request-policy.js/requests.js/requests.css 참조 및 도움말은 목록 갱신 시 보존합니다. 본문 파일에 버튼을 복제하지 않습니다. 요청은 GitHub Issue에 저장되며 발행/배포 완료가 아닙니다.

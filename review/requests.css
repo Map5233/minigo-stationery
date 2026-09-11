@@ -1,0 +1,28 @@
+.publish-request {
+  --request-paper: var(--paper, var(--cream));
+  --request-ink: var(--ink);
+  --request-accent: var(--accent, var(--pop));
+  margin-top: 24px; padding: 20px 0; border-top: 2px solid var(--request-ink);
+  color: var(--request-ink); font-family: inherit; line-height: 1.65; text-align: left;
+  scroll-margin-top: 96px;
+}
+.publish-request .publish-request__label {font-size: 1rem; font-weight: 800; margin: 0 0 8px;}
+.publish-request .publish-request__status {min-height: 5em; font-size: .9375rem; margin: 0 0 14px; max-width: 52ch; overflow-wrap: anywhere;}
+.publish-request__actions {display: flex; flex-wrap: wrap; gap: 10px; align-items: stretch;}
+.publish-request .publish-request__action, .publish-request .publish-request__retry {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+  padding: 10px 16px; border: 2px solid var(--request-ink); font: inherit; font-size: 1rem; font-weight: 700;
+  cursor: pointer; text-decoration: none; line-height: 1.5; box-sizing: border-box; border-radius: 0;
+}
+.publish-request .publish-request__action {min-width: 170px; color: var(--request-paper); background: var(--request-ink);}
+.publish-request .publish-request__retry {color: var(--request-ink); background: transparent;}
+.publish-request .publish-request__action:hover:not([aria-disabled="true"]) {color: var(--request-ink); background: var(--request-paper);}
+.publish-request .publish-request__retry:hover:not(:disabled) {background: var(--request-ink); color: var(--request-paper);}
+.publish-request .publish-request__action[aria-disabled="true"], .publish-request .publish-request__retry:disabled {opacity: .6; cursor: not-allowed;}
+.publish-request a:focus-visible, .publish-request button:focus-visible {outline: 3px solid var(--request-accent); outline-offset: 4px;}
+.publish-request a:active, .publish-request button:active:not(:disabled) {opacity: .8;}
+.publish-request .publish-request__help {font-size: .875rem; margin: 12px 0 0; max-width: 52ch; overflow-wrap: anywhere;}
+.publish-request .publish-request__help-link {font-size: .875rem; display: inline-flex; align-items: center; min-height: 44px; color: var(--request-ink); text-decoration: underline;}
+@media (max-width: 420px) {.publish-request .publish-request__action {flex: 1;} .publish-request .publish-request__status {min-height: 6.6em;}}
+@media (prefers-reduced-motion: reduce) {.publish-request * {animation: none; transition: none;}}
+@media (forced-colors: active) {.publish-request a, .publish-request button {forced-color-adjust: auto;}}
