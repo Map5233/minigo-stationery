@@ -7,9 +7,23 @@ const mime={".html":"text/html; charset=utf-8",".css":"text/css",".js":"applicat
 const server=http.createServer((req,res)=>{let pathname=decodeURIComponent(new URL(req.url,"http://localhost").pathname).replace(/^\/stationery(?=\/)/,"");
 let f=path.resolve(root,"."+pathname);if(f!==root&&!f.startsWith(root+path.sep)){res.writeHead(403).end();return;}if(fs.existsSync(f)&&fs.statSync(f).isDirectory())f=path.join(f,"index.html");if(!fs.existsSync(f)){res.writeHead(404).end();return;}res.writeHead(200,{"Content-Type":mime[path.extname(f)]||"application/octet-stream"});fs.createReadStream(f).pipe(res);});
 const fakePull=p=>({number:p.pr,state:"open",draft:false,head:{sha:p.sha,repo:{full_name:policy.repo}},base:{ref:"main",repo:{full_name:policy.repo}}});
-const p=manifest.posts[0],fakeIssue={number:999999,state:"open",created_at:"2026-09-11T00:00:00Z",updated_at:"2026-09-11T00:00:00Z",repository_url:"https://api.github.com/repos/"+policy.repo,user:{id:policy.owner.id,login:policy.owner.login,type:"User"},body:policy.requestBody(p)};
+const p=manifest.posts[0],fakeIssue={number:999999,state:"open",created_at:"2026-09-11T00:00:00Z",updated_at:"2026-09-11T00:00:00Z",repository_url:"https://api.github.com/repos/"+policy.repo,user:{id:policy.owner.id,login:policy.owner.login,type:"User"},body:p?policy.requestBody(p):""};
 (async()=>{await new Promise(r=>server.listen(0,"127.0.0.1",r));const base="http://127.0.0.1:"+server.address().port,browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH});
 const results=[];try{
+ if(!manifest.posts.length){
+  for(const width of [375,1440]){
+   const page=await browser.newPage({viewport:{width,height:900}});
+   await page.goto(base+"/review/");
+   await page.waitForFunction(()=>document.querySelector("[data-request-init]").textContent.includes("현재 발행 요청할 글이 없습니다"));
+   assert.equal(await page.locator(".publish-request").count(),0);
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+   assert((await page.locator("meta[name=robots]").getAttribute("content")).includes("noindex"));
+   await page.screenshot({path:path.join(out,"publish-empty-"+width+".png")});
+   await page.close();
+  }
+  console.log(JSON.stringify({passed:true,checks:["empty review 375/1440px","no request buttons","noindex retained"]}));
+  return;
+ }
  const context=await browser.newContext({viewport:{width:375,height:900},reducedMotion:"reduce"});
  let mode="ready",capturedURL=null;
  await context.route("https://api.github.com/**",async route=>{
@@ -28,7 +42,7 @@ const results=[];try{
  async function loaded(route="/review/"){await page.goto(base+route);await first().waitFor();await page.waitForFunction(()=>document.querySelector(".publish-request")&&!document.querySelector('.publish-request[aria-busy="true"]'));}
  async function fits(){assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
  mode="slow";await page.goto(base+"/review/");await first().waitFor();assert.equal(await first().locator(".publish-request__action").getAttribute("aria-disabled"),"true");await page.waitForFunction(()=>!document.querySelector('.publish-request[aria-busy="true"]'));results.push("loading / disabled");
- mode="ready";await loaded();assert.equal(await page.locator(".publish-request").count(),4);assert(await first().locator(".publish-request__action").getAttribute("href"));await fits();
+ mode="ready";await loaded();assert.equal(await page.locator(".publish-request").count(),manifest.posts.length);assert(await first().locator(".publish-request__action").getAttribute("href"));await fits();
  await first().scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,"publish-list-375.png")});
  const dims=await first().locator(".publish-request__action").boundingBox();assert(dims.height>=44);
  await first().locator(".publish-request__action").focus();assert(await first().locator(".publish-request__action").evaluate(el=>document.activeElement===el));
