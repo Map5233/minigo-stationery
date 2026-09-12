@@ -2,6 +2,246 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "pencil-grip-hand-size-20260912"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-hand-size.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-hand-size"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-hand-size.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "pencil-grip-hand-size-20260912"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-hand-size.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-hand-size"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-hand-size.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "left-handed-pencil-grip-20260911"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "left-handed-pencil-grip"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "left-handed-pencil-grip-20260911"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "left-handed-pencil-grip"
+        }
+      ],
+      "destination": "/stationery/story/left-handed-pencil-grip.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "first-pencil-choice-20260910"
+        }
+      ],
+      "destination": "/stationery/story/first-pencil-choice.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "first-pencil-choice"
+        }
+      ],
+      "destination": "/stationery/story/first-pencil-choice.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "first-pencil-choice-20260910"
+        }
+      ],
+      "destination": "/stationery/story/first-pencil-choice.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "first-pencil-choice"
+        }
+      ],
+      "destination": "/stationery/story/first-pencil-choice.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "pencil-grip-necessity-20260909"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-necessity.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-necessity"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-necessity.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "pencil-grip-necessity-20260909"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-necessity.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "pencil-grip-necessity"
+        }
+      ],
+      "destination": "/stationery/story/pencil-grip-necessity.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "fist-pencil-grasp-20260906"
+        }
+      ],
+      "destination": "/stationery/story/fist-pencil-grasp.html",
+      "permanent": true
+    },
+    {
+      "source": "/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "fist-pencil-grasp"
+        }
+      ],
+      "destination": "/stationery/story/fist-pencil-grasp.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "fist-pencil-grasp-20260906"
+        }
+      ],
+      "destination": "/stationery/story/fist-pencil-grasp.html",
+      "permanent": true
+    },
+    {
+      "source": "/stationery/story/post.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "fist-pencil-grasp"
+        }
+      ],
+      "destination": "/stationery/story/fist-pencil-grasp.html",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
