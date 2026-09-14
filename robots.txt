@@ -3,4 +3,4 @@ Allow: /
 Disallow: /story/admin.html
 Disallow: /stationery/story/admin.html
 
-Sitemap: https://minigo.onthemol.com/stationery/sitemap.xml
+Sitemap: https://minigo-stationery.vercel.app/stationery/sitemap.xml
