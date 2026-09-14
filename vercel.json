@@ -253,17 +253,6 @@
       "permanent": true
     },
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "minigo-stationery.vercel.app"
-        }
-      ],
-      "destination": "https://minigo.onthemol.com/:path*",
-      "permanent": true
-    },
-    {
       "source": "/",
       "destination": "/stationery/",
       "permanent": false

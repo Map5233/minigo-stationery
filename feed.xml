@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>미니고 이야기</title>
-    <link>https://minigo.onthemol.com/stationery/story/</link>
+    <link>https://minigo-stationery.vercel.app/stationery/story/</link>
     <description>작은 손의 편안한 시작을 돕는 미니고의 제품과 사용 이야기</description>
     <language>ko-KR</language>
     <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://minigo.onthemol.com/stationery/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://minigo-stationery.vercel.app/stationery/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>아이 손 크기에 맞는 연필교정기는 어떻게 고르나요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/pencil-grip-hand-size.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/pencil-grip-hand-size.html</link>
       <description>손 크기만으로 제품을 정하지 않고 손가락 자리, 연필 호환 규격, 실제로 잡을 때의 편안함을 나누어 확인하는 방법을 안내합니다.</description>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/pencil-grip-hand-size.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/pencil-grip-hand-size.html</guid>
     </item>
     <item>
       <title>왼손잡이 아이도 미니고 연필교정기를 사용할 수 있나요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/left-handed-pencil-grip.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/left-handed-pencil-grip.html</link>
       <description>왼손 사용 가능 여부는 제품별 안내로 확인해야 합니다. 미니고 제품 구성과 왼손용 표시, 사용 사진, 문의할 내용을 구분해 정리했습니다.</description>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/left-handed-pencil-grip.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/left-handed-pencil-grip.html</guid>
     </item>
     <item>
       <title>처음 연필을 잡는 아이에게 어떤 연필을 골라 주면 좋을까요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/first-pencil-choice.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/first-pencil-choice.html</link>
       <description>첫 연필은 굵기와 길이, 손의 편안함을 비교해 고르세요. 연필교정기를 함께 쓸 때 필요한 규격 확인도 정리했습니다.</description>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/first-pencil-choice.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/first-pencil-choice.html</guid>
     </item>
     <item>
       <title>연필교정기는 모든 아이에게 꼭 필요한가요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/pencil-grip-necessity.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/pencil-grip-necessity.html</link>
       <description>연필교정기를 필수 준비물로 정하기 전에 손의 편안함, 실제 필기 어려움, 다른 필기구와의 차이를 살펴보는 기준을 정리했습니다.</description>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/pencil-grip-necessity.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/pencil-grip-necessity.html</guid>
     </item>
     <item>
       <title>아이가 연필을 주먹으로 쥐면 어떻게 도와줘야 할까요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/fist-pencil-grasp.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/fist-pencil-grasp.html</link>
       <description>주먹 쥐기만으로 문제를 단정하지 않고, 그리기 모습과 편안함을 관찰하며 필기구와 놀이를 선택하는 방법을 안내합니다.</description>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/fist-pencil-grasp.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/fist-pencil-grasp.html</guid>
     </item>
     <item>
       <title>미니고 연필교정기 3종은 어떤 점이 다른가요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/pencil-grip-comparison.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/pencil-grip-comparison.html</link>
       <description>7컬러형, 쫀득쫀득 8개입형, 손목 보조대가 표시된 제품의 차이를 색상·수량·구성품 기준으로 정리했습니다.</description>
       <pubDate>Sat, 05 Sep 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/pencil-grip-comparison.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/pencil-grip-comparison.html</guid>
     </item>
     <item>
       <title>연필교정기는 몇 살부터 사용하면 좋을까요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/pencil-grip-age.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/pencil-grip-age.html</link>
       <description>특정 나이보다 아이가 연필을 잡을 때의 편안함과 사용 모습을 살펴 연필교정기를 시도하는 방법을 안내합니다.</description>
       <pubDate>Sun, 30 Aug 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/pencil-grip-age.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/pencil-grip-age.html</guid>
     </item>
     <item>
       <title>연필을 처음 잡는 아이에게 무엇이 필요할까요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/first-pencil-grip.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/first-pencil-grip.html</link>
       <description>한 가지 정답 자세보다 아이가 편안하게 시도할 환경을 먼저 살피는 연필 잡기 시작 방법을 안내합니다.</description>
       <pubDate>Sat, 29 Aug 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/first-pencil-grip.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/first-pencil-grip.html</guid>
     </item>
     <item>
       <title>미니고는 왜 연필교정기를 시작했나요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/why-minigo-started.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/why-minigo-started.html</link>
       <description>아이의 작은 손이 연필을 편안하게 익히도록 돕고 싶었던 미니고의 시작과 제품 기준을 기록합니다.</description>
       <pubDate>Thu, 20 Aug 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/why-minigo-started.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/why-minigo-started.html</guid>
     </item>
     <item>
       <title>연필교정기 패키지는 왜 바꾸게 되었나요?</title>
-      <link>https://minigo.onthemol.com/stationery/story/why-pencil-grip-package-changed.html</link>
+      <link>https://minigo-stationery.vercel.app/stationery/story/why-pencil-grip-package-changed.html</link>
       <description>고객의 포장 불편 의견에서 시작됐다고 기록된 패키지 개선 초안과 확인이 필요한 내용을 함께 정리합니다.</description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0900</pubDate>
-      <guid isPermaLink="true">https://minigo.onthemol.com/stationery/story/why-pencil-grip-package-changed.html</guid>
+      <guid isPermaLink="true">https://minigo-stationery.vercel.app/stationery/story/why-pencil-grip-package-changed.html</guid>
     </item>
   </channel>
 </rss>
